@@ -8,7 +8,7 @@ public class Chip8
     public Context Context;
     public bool IsRunning { get; private set; } = false;
     public bool IsStarted { get; private set; } = false;
-    public int FPS { get; set; } = 999;
+    public int FPS { get; set; } = 60;
     public long FrameTime => 1000 / FPS;
     private Thread EmulationThread;
     
